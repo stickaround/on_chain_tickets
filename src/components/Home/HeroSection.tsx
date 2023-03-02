@@ -72,7 +72,7 @@ const HeroSection = () => {
             <div className='md:mb-md mb-[70px]'>
               <span>We operate on</span>
               <h2 className='font-bold text-d-lg leading-[64px]'>147</h2>
-              <span>Projects</span>
+              <span>Tickets</span>
             </div>
           </FadeInSection>
           <FadeInSection>

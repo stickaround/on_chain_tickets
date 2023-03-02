@@ -12,8 +12,6 @@ const Home = () => {
     <div className='text-center md:text-left'>
       <HeroSection />
       <StakeSection />
-      <InstStakerSection />
-      <InfraSection />
       <ValueSection />
       <TeamSection />
       <FAQSection />
