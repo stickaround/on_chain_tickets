@@ -5,13 +5,13 @@ import CornerBorderDiv from '../CornerBorderDiv';
 import FadeInSection from '../FadeInSection';
 import Lode from '../Lode';
 import DemoModal from './DemoModal';
-import JoinAsABrandModal from './JoinAsABrandModal';
+import JoinAsAVenueModal from './JoinAsAVenueModal';
 import JoinAsAFanModal from './JoinAsAFanModal';
 import ConfirmCodeModal from './ConfirmCodeModal';
 
 const HeroSection = () => {
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
-  const [isJoinAsABrandModalOpen, setIsJoinAsABrandModalOpen] = useState(false);
+  const [isJoinAsAVenueModalOpen, setIsJoinAsAVenueModalOpen] = useState(false);
   const [isJoinAsAFanModalOpen, setIsJoinAsAFanModalOpen] = useState(false);
   const [isConfirmModalOpen, setIsConfirmModalOpen] = useState(false);
 
@@ -101,9 +101,9 @@ const HeroSection = () => {
         <div className='col-start-2 col-span-2'>
           <Button
             className='bg-primary-50 w-[100%] cursor-pointer'
-            handleClick={() => setIsJoinAsABrandModalOpen(true)}
+            handleClick={() => setIsJoinAsAVenueModalOpen(true)}
           >
-            Join as a Brand
+            Join as a Venue
           </Button>
         </div>
         <div className='col-span-2'>
@@ -119,9 +119,9 @@ const HeroSection = () => {
         open={isDemoModalOpen}
         closeModal={() => setIsDemoModalOpen(false)}
       />
-      <JoinAsABrandModal
-        open={isJoinAsABrandModalOpen}
-        closeModal={() => setIsJoinAsABrandModalOpen(false)}
+      <JoinAsAVenueModal
+        open={isJoinAsAVenueModalOpen}
+        closeModal={() => setIsJoinAsAVenueModalOpen(false)}
       />
       <JoinAsAFanModal
         open={isJoinAsAFanModalOpen}

@@ -2,15 +2,15 @@ import React from 'react';
 
 import Card from '../Card';
 
-type JoinAsABrandModalProps = {
+type JoinAsAVenueModalProps = {
   open: boolean;
   closeModal: () => void;
 };
 
-export default function JoinAsABrandModal({
+export default function JoinAsAVenueModal({
   open,
   closeModal,
-}: JoinAsABrandModalProps) {
+}: JoinAsAVenueModalProps) {
   return open ? (
     <Card className='mx-auto max-w-[580px] calc-card'>
       <div className='justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none'>
