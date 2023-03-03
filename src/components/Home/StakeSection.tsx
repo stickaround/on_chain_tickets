@@ -49,10 +49,9 @@ const StakeSection = () => {
               </h3>
             </FadeInSection>
             <p className='font-inter mb-x-big text-sm'>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum
+              We serve any type of tickets for any type of customers all around
+              the world. Safer, more secure, fun, customer journey options,
+              freedom were given venue to customers ticket.
             </p>
           </div>
         </CornerBorderDiv>

@@ -3,7 +3,7 @@ import FadeInSection from '../FadeInSection';
 
 const FAQSection = () => {
   return (
-    <section className='md:mt-[380px] md:px-[210px] mt-[90px]'>
+    <section className='md:mt-[380px] md:px-[210px] mt-[90px]' id='faqs'>
       <FadeInSection>
         <h3 className='medium-title text-center'>Got questions ?</h3>
         <h4 className='font-bold text-md text-primary-500 font-inter mb-16 text-center'>

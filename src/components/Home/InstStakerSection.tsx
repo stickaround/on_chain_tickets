@@ -38,6 +38,7 @@ const InstStakerSection = () => {
               <Input
                 label='Name'
                 name='name'
+                type='text'
                 error={false}
                 value={formik.values.name}
                 handleChange={formik.handleChange}
@@ -47,6 +48,7 @@ const InstStakerSection = () => {
               <Input
                 label='Email address'
                 name='email'
+                type='text'
                 error={false}
                 value={formik.values.email}
                 handleChange={formik.handleChange}

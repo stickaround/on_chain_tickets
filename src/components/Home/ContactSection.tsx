@@ -36,6 +36,7 @@ const ContactSection = () => {
               <Input
                 label='Name'
                 name='name'
+                type='text'
                 error={false}
                 value={formik.values.name}
                 handleChange={formik.handleChange}
@@ -45,6 +46,7 @@ const ContactSection = () => {
               <Input
                 label='Email address'
                 name='email'
+                type='number'
                 error={false}
                 value={formik.values.email}
                 handleChange={formik.handleChange}
