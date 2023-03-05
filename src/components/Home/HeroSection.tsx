@@ -10,12 +10,12 @@ import JoinAsAFanModal from './JoinAsAFanModal';
 import JoinAsAVenueModal from './JoinAsAVenueModal';
 
 const HeroSection = () => {
-  const handleClickDemo = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  // const handleClickDemo = (id: string) => {
+  //   const element = document.getElementById(id);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
   const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
   const [isJoinAsAVenueModalOpen, setIsJoinAsAVenueModalOpen] = useState(false);
   const [isJoinAsAFanModalOpen, setIsJoinAsAFanModalOpen] = useState(false);
@@ -80,7 +80,7 @@ const HeroSection = () => {
           </div>
         </CornerBorderDiv>
       </div>
-      <div className='md:grid md:grid-cols-4 md:ml-[110px] md:-mt-5'>
+      <div className='md:grid md:grid-cols-4 md:ml-[110px] mt-[230px]'>
         <div className='col-end-4'>
           <FadeInSection>
             <div className='md:mb-md mb-[70px]'>
@@ -122,7 +122,7 @@ const HeroSection = () => {
             alt='venue'
           />
           <Button
-            className='bg-orange-400 hover:bg-orange-600 active:bg-orange-800 w-[100%] rounded-t-none'
+            className='bg-orange-400 hover:bg-orange-600 active:bg-orange-800 w-[100%] rounded-t-none  text-[25px]'
             handleClick={() => setIsJoinAsAVenueModalOpen(true)}
           >
             Join as an organizer
@@ -135,7 +135,7 @@ const HeroSection = () => {
             alt='venue'
           />
           <Button
-            className='w-[100%] bg-orange-200 hover:bg-orange-500 active:bg-orange-600 rounded-t-none'
+            className='w-[100%] bg-orange-200 hover:bg-orange-500 active:bg-orange-600 rounded-t-none text-[25px]'
             handleClick={() => setIsJoinAsAFanModalOpen(true)}
           >
             Join as a fan

@@ -39,7 +39,7 @@ const Lode = () => {
         className='h-[1000px] w-[100vw] absolute'
         style={{ backgroundColor: 'rgba(0,0,0,0)' }}
       >
-        {lode === 1 ? (
+        {/* {lode === 1 ? (
           <Canvas
             camera={{ near: 0.1, far: 2000, position: [0, 10, 400] }}
             orthographic={true}
@@ -71,7 +71,12 @@ const Lode = () => {
               />
             </Suspense>
           </Canvas>
-        )}
+        )} */}
+        <img
+          src='https://d10vd7ozbbh4dp.cloudfront.net/Digital_Twin_6d35c5e97e.svg'
+          alt='ill'
+          className='ml-auto mr-[20%]'
+        />
       </div>
     </>
   );

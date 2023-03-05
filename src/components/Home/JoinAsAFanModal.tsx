@@ -54,18 +54,16 @@ export default function JoinAsAFanModal({
                   Select the tickets of the events you want to attend
                 </label>
                 <div className='grid grid-cols-3 gap-4'>
-                  <div
-                    className={
-                      firstSelected ? 'bg-gray-500 p-3 rounded-3xl' : ''
-                    }
-                  >
+                  <div>
                     <div
                       className='hover:cursor-pointer rounded-3xl p-2 dark:hover:bg-grey-100'
                       onClick={() => setFirstSelected(!firstSelected)}
                     >
                       <img
                         src='/assets/davis_fighters.jpg'
-                        className='rounded-3xl object-cover hover:scale-105'
+                        className={`rounded-3xl object-cover ${
+                          firstSelected ? 'outline outline-[6px]' : ''
+                        }`}
                         alt='Davis Fighter'
                         width='200px'
                       />
@@ -75,19 +73,15 @@ export default function JoinAsAFanModal({
                       Davis and Daniel is gonna have a boxing game
                     </p>
                   </div>
-                  <div
-                    className={
-                      secondSelected ? 'bg-gray-500 p-3 rounded-3xl' : ''
-                    }
-                  >
+                  <div>
                     <div
                       className='hover:cursor-pointer rounded-3xl p-2 dark:hover:bg-grey-100'
                       onClick={() => setSecondSelected(!secondSelected)}
                     >
                       <img
                         src='/assets/john_mayer.jpg'
-                        className={`rounded-3xl object-cover hover:scale-105 ${
-                          secondSelected ? 'border-1' : ''
+                        className={`rounded-3xl object-cover ${
+                          secondSelected ? 'outline outline-[6px]' : ''
                         }`}
                         alt='John Mayer'
                         width='200px'
@@ -98,18 +92,16 @@ export default function JoinAsAFanModal({
                       John Mayer will start his new season soon
                     </p>
                   </div>
-                  <div
-                    className={
-                      thirdSelected ? 'bg-gray-500 p-3 rounded-3xl' : ''
-                    }
-                  >
+                  <div>
                     <div
                       className='hover:cursor-pointer rounded-3xl p-2 dark:hover:bg-grey-100'
                       onClick={() => setThirdSelected(!thirdSelected)}
                     >
                       <img
                         src='/assets/kobe_braynt.jpg'
-                        className='rounded-3xl object-cover hover:scale-105'
+                        className={`rounded-3xl object-cover ${
+                          thirdSelected ? 'outline outline-[6px]' : ''
+                        }`}
                         alt='Kobe Bryant'
                         width='200px'
                       />
