@@ -37,7 +37,7 @@ const FAQSection = () => {
           <Accordion
             title='How to create an event?'
             content={
-              'You can signup an event and create your own tickets and events'
+              "After enrolling with On-Chain-Tickets, you'll be able to authenticate ownership of tokens and other venue while keeping them safe in cold storage."
             }
             opened={activeQuestion === 2}
           />
@@ -46,7 +46,7 @@ const FAQSection = () => {
           <Accordion
             title='All my tickets are NTFs?'
             content={
-              'Yes, all your tickets are tokenized, super safe and secure.'
+              'Yes, all your tickets are tokenized, super safe and secure. Use On-Chain-Tickets to safely prove ownership of your tickets. No gas or payment of any type is required'
             }
             opened={activeQuestion === 3}
           />
