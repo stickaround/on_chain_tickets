@@ -48,8 +48,8 @@ const HeroSection = () => {
             <h2 className='font-bold md:text-d-lg leading-[64px] mb-2 text-center md:text-left text-[55px]'>
               <p>Tickets</p>
             </h2>
-            <p className='font-inter mb-x-big text-5xl'>
-              <span className='italic text-5xl mr-[4px] text-amber-400'>
+            <p className='font-inter mb-x-big text-3xl'>
+              <span className='italic text-3xl mr-[4px] text-amber-400'>
                 A TOP-NOTCH
               </span>{' '}
               ticketing experience for event organizers & attendees
@@ -65,13 +65,13 @@ const HeroSection = () => {
             </Button> */}
             <div className='flex items-center mt-[50px]'>
               <Button
-                className='bg-orange-400 hover:bg-orange-600 active:bg-orange-800 w-[100%] cursor-pointer'
+                className='bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-800 w-[100%] cursor-pointer'
                 handleClick={() => setIsJoinAsAVenueModalOpen(true)}
               >
                 Join as a Venue
               </Button>
               <Button
-                className='w-[100%] bg-transparent cursor-pointer bg-orange-200 hover:bg-orange-500 active:bg-orange-600 outline-1'
+                className='w-[100%] bg-transparent cursor-pointer bg-cyan-400 hover:bg-cyan-500 active:bg-cyan-600 outline-1'
                 handleClick={() => setIsJoinAsAFanModalOpen(true)}
               >
                 Join as a Fan
@@ -122,7 +122,7 @@ const HeroSection = () => {
             alt='venue'
           />
           <Button
-            className='bg-orange-400 hover:bg-orange-600 active:bg-orange-800 w-[100%] rounded-t-none  text-[25px]'
+            className='bg-cyan-400 hover:bg-cyan-600 active:bg-cyan-800 w-[100%] rounded-t-none  text-[25px]'
             handleClick={() => setIsJoinAsAVenueModalOpen(true)}
           >
             Join as an organizer
@@ -135,7 +135,7 @@ const HeroSection = () => {
             alt='venue'
           />
           <Button
-            className='w-[100%] bg-orange-200 hover:bg-orange-500 active:bg-orange-600 rounded-t-none text-[25px]'
+            className='w-[100%] bg-cyan-200 hover:bg-cyan-500 active:bg-cyan-600 rounded-t-none text-[25px]'
             handleClick={() => setIsJoinAsAFanModalOpen(true)}
           >
             Join as a fan
