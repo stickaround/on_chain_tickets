@@ -39,28 +39,39 @@ const Lode = () => {
         className='h-[1000px] w-[100vw] absolute'
         style={{ backgroundColor: 'rgba(0,0,0,0)' }}
       >
-        {
-          // lode === 1 ? null : 'string'
-          // // <Canvas camera={{ near: 0.1, far: 2000, position: [0, 10, 400] }} orthographic={true}>
-          // //   <pointLight position={[0, 300, 3000]} intensity={1.3} />
-          // //   <Suspense fallback={null}>
-          // //     <primitive key={1} object={scene} position={[260, 220, 0]} scale={0.18} rotation={[0, Math.PI * top * 30 + (Math.PI / 2 * 3), 0]} />
-          // //   </Suspense>
-          // // </Canvas>
-          // // : <Canvas camera={{ near: 0.1, far: 2000, position: [0, 10, 400] }} orthographic={true}>
-          // //   <pointLight position={[0, 300, 3000]} intensity={1.3} />
-          // //   <Suspense fallback={null}>
-          // //     <primitive key={2} object={scene} position={[0, 360, 0]} scale={0.07} rotation={[0, Math.PI * top * 30 + (Math.PI / 2 * 3), 0]} />
-          // //   </Suspense>
-          // // </Canvas>
-          <div>
-            <img
-              src='/assets/back.jpg'
-              alt='token_image'
-              className='ml-auto mr-[25%]'
-            />
-          </div>
-        }
+        {lode === 1 ? (
+          <Canvas
+            camera={{ near: 0.1, far: 2000, position: [0, 10, 400] }}
+            orthographic={true}
+          >
+            <pointLight position={[0, 300, 3000]} intensity={1.3} />
+            <Suspense fallback={null}>
+              <primitive
+                key={1}
+                object={scene}
+                position={[260, 220, 0]}
+                scale={0.18}
+                rotation={[0, Math.PI * top * 30 + (Math.PI / 2) * 3, 0]}
+              />
+            </Suspense>
+          </Canvas>
+        ) : (
+          <Canvas
+            camera={{ near: 0.1, far: 2000, position: [0, 10, 400] }}
+            orthographic={true}
+          >
+            <pointLight position={[0, 300, 3000]} intensity={1.3} />
+            <Suspense fallback={null}>
+              <primitive
+                key={2}
+                object={scene}
+                position={[0, 360, 0]}
+                scale={0.07}
+                rotation={[0, Math.PI * top * 30 + (Math.PI / 2) * 3, 0]}
+              />
+            </Suspense>
+          </Canvas>
+        )}
       </div>
     </>
   );

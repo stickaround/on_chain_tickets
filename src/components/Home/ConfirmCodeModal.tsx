@@ -25,7 +25,7 @@ export default function ConfirmCodeModal({
   return open ? (
     <Card className='mx-auto max-w-[580px] calc-card'>
       <div className='justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none'>
-        <div className='relative w-auto my-6 mx-auto max-w-3xl'>
+        <div className='relative w-[80%] my-6'>
           {/*content*/}
           <div className='border-0 rounded-lg shadow-lg relative flex flex-col bg-[#65474D]/90 w-full outline-none focus:outline-none'>
             {/*header*/}
@@ -42,13 +42,13 @@ export default function ConfirmCodeModal({
             </div>
             {/*body*/}
             <div className='relative p-6 flex-auto'>
-              <p className='my-4 text-slate-500 text-lg leading-relaxed'>
-                Please checkout your mailbox
+              <p className='my-4 text-gray-300 text-[35px] leading-relaxed'>
+                Please checkout your mailbox and enter code below
                 <span className='border-b-[1px] border-b-imperGrey w-1/2'>
                   <Input
-                    label='Code'
+                    label=''
                     name='code'
-                    type='string'
+                    type='text'
                     className='bg-transparent'
                     error={false}
                     value={formik.values.code}
@@ -60,7 +60,7 @@ export default function ConfirmCodeModal({
             {/*footer*/}
             <div className='flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b'>
               <button
-                className='text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150'
+                className='text-gray-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150'
                 type='button'
                 onClick={closeModal}
               >

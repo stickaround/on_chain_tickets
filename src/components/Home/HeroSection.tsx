@@ -45,22 +45,16 @@ const HeroSection = () => {
         </CornerBorderDiv>
         <CornerBorderDiv className='hidden md:block right-top-corner left-bottom-corner md:pl-16 md:pb-16 md:pt-8'>
           <div className='md:-mr-16'>
-            <h2 className='font-bold md:text-d-lg leading-[64px] mb-2 text-center md:text-left text-[45px]'>
-              <p>
-                The next level <br /> of blockchain{' '}
-                <span className='text-orange-400'>ticketing</span>
-              </p>
+            <h2 className='font-bold md:text-d-lg leading-[64px] mb-2 text-center md:text-left text-[55px]'>
+              <p>Tickets</p>
             </h2>
-            <p className='font-inter mb-x-big text-base'>
-              <span className='italic text-lg mr-[4px] text-amber-400'>
-                Onchain ticket
+            <p className='font-inter mb-x-big text-5xl'>
+              <span className='italic text-5xl mr-[4px] text-amber-400'>
+                A TOP-NOTCH
               </span>{' '}
-              is to manage ticketing on top of blockchain. Ticket buyers and
-              event organizers who make use of the protocol's products don't
-              need to worry about scam; they simply experience a top-notch
-              ticketing experience.
+              ticketing experience for event organizers & attendees
             </p>
-            <Button
+            {/* <Button
               className='px-[60px] py-4'
               handleClick={() => handleClickDemo('demo')}
             >
@@ -68,7 +62,21 @@ const HeroSection = () => {
                 View Demo
                 <Icon icon='bi:arrow-down' className='ml-md' />
               </div>
-            </Button>
+            </Button> */}
+            <div className='flex items-center mt-[50px]'>
+              <Button
+                className='bg-orange-400 hover:bg-orange-600 active:bg-orange-800 w-[100%] cursor-pointer'
+                handleClick={() => setIsJoinAsAVenueModalOpen(true)}
+              >
+                Join as a Venue
+              </Button>
+              <Button
+                className='w-[100%] bg-transparent cursor-pointer bg-orange-200 hover:bg-orange-500 active:bg-orange-600 outline-1'
+                handleClick={() => setIsJoinAsAFanModalOpen(true)}
+              >
+                Join as a Fan
+              </Button>
+            </div>
           </div>
         </CornerBorderDiv>
       </div>
@@ -78,64 +86,60 @@ const HeroSection = () => {
             <div className='md:mb-md mb-[70px]'>
               <span>More than</span>
               <h2 className='font-bold text-d-lg leading-[64px]'>5000</h2>
-              <span>Customers worldwide</span>
+              <span>tickets are sold</span>
             </div>
           </FadeInSection>
           <FadeInSection>
             <div className='md:mb-md mb-[70px]'>
-              <span>More than</span>
-              <h2 className='font-bold text-d-lg leading-[64px]'>15M</h2>
-              <span>Delegated to us</span>
+              <span>Cooperate with</span>
+              <h2 className='font-bold text-d-lg leading-[64px]'>1.5k</h2>
+              <span>event organizers</span>
             </div>
           </FadeInSection>
         </div>
         <div className='col-end-5 md:mt-1'>
           <FadeInSection>
             <div className='md:mb-md mb-[70px]'>
-              <span>We operate on</span>
-              <h2 className='font-bold text-d-lg leading-[64px]'>147</h2>
+              <span>Made more than</span>
+              <h2 className='font-bold text-d-lg leading-[64px]'>$1.47M</h2>
               <span>Tickets</span>
             </div>
           </FadeInSection>
           <FadeInSection>
             <div className='md:mb-md'>
-              <span>More than</span>
-              <h2 className='font-bold text-d-lg leading-[64px]'>$35M</h2>
-              <span>Distributed revenues</span>
+              <span>Made </span>
+              <h2 className='font-bold text-d-lg leading-[64px]'>$0.35M</h2>
+              <span>in the secondary market</span>
             </div>
           </FadeInSection>
         </div>
       </div>
       <div className='grid grid-cols-2 gap-4 mt-[250px] mb-[200px]' id='demo'>
-        <div className='block rounded-lg bg-gray-600 shadow-lg dark:bg-neutral-700'>
+        <div className='block rounded-lg dark:bg-neutral-700'>
           <img
             className='rounded-t-lg w-[100%]'
-            src='/assets/venue.jpg'
+            src='/assets/organizer.jpg'
             alt='venue'
           />
-          <div className='p-6'>
-            <Button
-              className='bg-primary-50 w-[100%] cursor-pointer'
-              handleClick={() => setIsJoinAsAVenueModalOpen(true)}
-            >
-              Join as a Venue
-            </Button>
-          </div>
+          <Button
+            className='bg-orange-400 hover:bg-orange-600 active:bg-orange-800 w-[100%] rounded-t-none'
+            handleClick={() => setIsJoinAsAVenueModalOpen(true)}
+          >
+            Join as an organizer
+          </Button>
         </div>
-        <div className='block rounded-lg bg-gray-600 shadow-lg dark:bg-neutral-700'>
+        <div className='block rounded-lg dark:bg-neutral-700'>
           <img
             className='rounded-t-lg w-[100%]'
             src='/assets/fan.jpg'
             alt='venue'
           />
-          <div className='p-6'>
-            <Button
-              className='w-[100%] bg-transparent cursor-pointer outline outline-primary-50 outline-1'
-              handleClick={() => setIsJoinAsAFanModalOpen(true)}
-            >
-              Join as a Fan
-            </Button>
-          </div>
+          <Button
+            className='w-[100%] bg-orange-200 hover:bg-orange-500 active:bg-orange-600 rounded-t-none'
+            handleClick={() => setIsJoinAsAFanModalOpen(true)}
+          >
+            Join as a fan
+          </Button>
         </div>
       </div>
       <JoinAsAVenueModal

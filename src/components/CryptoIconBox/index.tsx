@@ -15,9 +15,9 @@ const CryptoIconBox = (props: Props) => (
     )}
     <div className='text-center flex flex-col items-center mt-3'>
       <img
-        src={`/assets/${props.icon}.svg`}
+        src={`/assets/${props.icon}`}
         alt={props.icon}
-        className='w-[60px] h-[60px] mb-[6px] icon-shadow'
+        className='w-[60px] h-[60px] mb-[6px] icon-shadow rounded-full'
       />
       <p className='text-[14px]'>{props.label}</p>
     </div>

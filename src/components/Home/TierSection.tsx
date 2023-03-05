@@ -6,7 +6,7 @@ const TierSection = () => {
   return (
     <div>
       <div className='flex mt-4 flex-col md:flex-row'>
-        <div className='md:w-1/3 md:mr-4'>
+        <div className='md:w-1/2 md:mr-4'>
           <div className=' text-left'>
             <label className='mb-2 text-sm font-medium text-[#E5E7EB]'>
               Name of the levels/tiers Name
@@ -17,24 +17,13 @@ const TierSection = () => {
             />
           </div>
         </div>
-        <div className='md:w-1/3 md:mr-4'>
+        <div className='md:w-1/2 md:mr-4'>
           <div className=' text-left'>
             <label className='mb-2 text-sm font-medium text-[#E5E7EB]'>
               Cost
             </label>
             <input
               type='number'
-              className='bg-[#65474D] w-full text-sm border-[0.5px] p-2.5 mt-3 rounded-lg text-white'
-            />
-          </div>
-        </div>
-        <div className='md:w-1/3 md:mr-4'>
-          <div className=' text-left'>
-            <label className='mb-2 text-sm font-medium text-[#E5E7EB]'>
-              Description
-            </label>
-            <input
-              type='text'
               className='bg-[#65474D] w-full text-sm border-[0.5px] p-2.5 mt-3 rounded-lg text-white'
             />
           </div>

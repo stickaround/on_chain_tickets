@@ -19,7 +19,7 @@ const ContactSection = () => {
   });
 
   return (
-    <section className='md:mt-[200px] md:mb-[250px] mt-[90px] mb-[70px]'>
+    <section className='md:mt-[100px] md:mb-[100px] mt-[90px] mb-[70px]'>
       <FadeInSection>
         <Card className='mx-auto max-w-[580px] calc-card'>
           <h4 className='font-bold text-md text-primary-300 font-inter mb-2 text-center'>
@@ -62,7 +62,9 @@ const ContactSection = () => {
               className='bg-[#65474D] w-full text-sm block p-2.5 rounded-lg text-white border border-white focus:ring-white'
             />
           </div>
-          <Button className='w-full mt-6'>Send message</Button>
+          <Button className='w-full mt-6 bg-orange-400 hover:bg-orange-600 active:bg-orange-800'>
+            Send message
+          </Button>
           <div className='mt-8'>
             <div className='md:flex justify-between'>
               <div className='flex items-center'>

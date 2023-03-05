@@ -7,8 +7,8 @@ import Hover3D from '../Hover3D';
 
 const TeamSection = () => {
   return (
-    <section className='md:mt-[270px] mt-[80px]'>
-      <div className='text-center max-w-md mx-auto mb-20 md:mt-24'>
+    <section className='md:mt-[100px] mt-[80px]'>
+      <div className='text-center max-w-[600px] mx-auto mb-20 md:mt-24'>
         <FadeInSection>
           <h4 className='font-bold text-md text-primary-500 font-inter mb-2'>
             Discover
@@ -17,11 +17,12 @@ const TeamSection = () => {
             Our Team
           </h3>
         </FadeInSection>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum
+        <p className='mt-3'>
+          Observations & Customizations from around the ticketing & blockchain
+          industries.
+          <br />
+          We help anyone who issues tickets worldwide to take advantage of the
+          latest technological innovations
         </p>
       </div>
       <Carousel

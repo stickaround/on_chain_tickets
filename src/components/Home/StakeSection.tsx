@@ -41,31 +41,29 @@ const StakeSection = () => {
       </div>
       <div className='max-w-[587px] mx-auto md:mt-[155px] mt-[30px]'>
         <CornerBorderDiv className='left-top-corner right-bottom-corner text-center'>
-          <div className='md:pl-lg md:pb-[42px] md:pr-xxx-big pt-2'>
+          <div className='md:pb-[42px] pt-2'>
             <FadeInSection>
-              <h3 className='font-bold md:text-[45px] md:leading-[64px] text-4xl mb-2 text-center'>
-                EVM Compatible
+              <h3 className='font-bold md:text-[45px] md:leading-[64px] text-5xl mb-2 text-center'>
+                Experience
               </h3>
             </FadeInSection>
-            <p className='font-inter mb-x-big text-base'>
-              We are now in mission to make ticket in fast, cheap and safe,
-              that's why our contract is EVM compatible We serve any type of
-              tickets for any type of customers all around the world. Safer,
-              more secure, fun, customer journey options, freedom were given
-              venue to customers ticket.
+            <p className='font-inter mb-x-big text-[25px]'>
+              We are now on a mission to make ticketing experience faster,
+              cheaper and safer for any type of events and all attendees around
+              the world.
             </p>
           </div>
         </CornerBorderDiv>
       </div>
       <div className='hidden md:grid md:grid-cols-4 grid-cols-3 xl:px-[200px] mt-8'>
-        <CryptoIconBox label='Icon text label' icon={'crypto_icon_1'} />
-        <CryptoIconBox label='Icon text label' icon={'crypto_icon_2'} />
-        <CryptoIconBox label='Icon text label' icon={'crypto_icon_3'} />
-        <CryptoIconBox label='Icon text label' icon={'crypto_icon_4'} />
-        <CryptoIconBox label='Icon text label' icon={'crypto_icon_5'} />
-        <CryptoIconBox label='Icon text label' icon={'crypto_icon_6'} />
-        <CryptoIconBox label='Icon text label' icon={'crypto_icon_7'} />
-        <CryptoIconBox label='Icon text label' icon={'crypto_icon_8'} />
+        <CryptoIconBox label='Generate Royalties' icon={'money.png'} />
+        <CryptoIconBox label='Fast' icon={'crypto_icon_2.svg'} />
+        <CryptoIconBox label='Secure' icon={'secure.png'} />
+        <CryptoIconBox label='Cheap' icon={'crypto_icon_4.svg'} />
+        <CryptoIconBox label='Bullet Proof Secure' icon={'crypto_icon_5.svg'} />
+        <CryptoIconBox label='No Country Fee' icon={'crypto_icon_6.svg'} />
+        <CryptoIconBox label='Rewarding' icon={'gift.png'} />
+        <CryptoIconBox label='Everyone' icon={'users.png'} />
       </div>
     </section>
   );

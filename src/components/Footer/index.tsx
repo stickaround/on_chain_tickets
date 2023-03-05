@@ -12,7 +12,7 @@ const FooterCol = (props: {
     </h2>
     <ul className='text-imperGrey'>
       {props.items.map((item, index) => (
-        <li className='mb-1' key={index}>
+        <li className='mb-1 text-left' key={index}>
           <Link to={item.address ? item.address : '#'}>{item.title}</Link>
         </li>
       ))}
@@ -22,8 +22,8 @@ const FooterCol = (props: {
 
 const Footer = () => {
   return (
-    <footer className='relative text-white md:text-left text-center pt-[100px] md:px-[130px] z-40'>
-      <div className='md:flex md:justify-between'>
+    <footer className='relative text-white text-center pt-[50px] md:px-[130px] z-40'>
+      <div className='flex justify-center'>
         <div className='flex md:flex-row flex-col'>
           <div className='md:order-1 order-2 mb-[52px]'>
             <FooterCol

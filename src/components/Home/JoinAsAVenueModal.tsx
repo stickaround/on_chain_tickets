@@ -40,11 +40,11 @@ export default function JoinAsAVenueModal({
   };
 
   return open ? (
-    <Card className='mx-auto max-w-[580px] calc-card'>
+    <Card className='mx-auto w-[90%] calc-card'>
       <div className='justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none'>
-        <div className='relative w-auto my-6 mx-auto max-w-3xl'>
+        <div className='relative w-[80%] my-6'>
           {/*content*/}
-          <div className='border-0 rounded-lg shadow-lg relative bg-[#65474D]/80 flex flex-col w-full outline-none focus:outline-none'>
+          <div className='border-0 rounded-lg shadow-lg relative bg-[#65474D]/90 flex flex-col outline-none focus:outline-none w-[100%]'>
             {/*header*/}
             <div className='flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t'>
               <h3 className='text-3xl font-semibold'>Request a Venue</h3>
@@ -61,7 +61,7 @@ export default function JoinAsAVenueModal({
             <div className='relative p-6 flex-auto'>
               <div className='md:mr-4'>
                 <Input
-                  label='Name of your brand'
+                  label='Name your brand'
                   name='name'
                   type='text'
                   className='bg-transparent'

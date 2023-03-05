@@ -16,7 +16,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className='md:mt-[380px] md:px-[210px] mt-[90px]' id='faqs'>
+    <section className='md:mt-[150px] md:px-[210px] mt-[90px]' id='faqs'>
       <FadeInSection>
         <h3 className='medium-title text-center'>Have questions ?</h3>
         <h4 className='font-bold text-md text-primary-500 font-inter mb-16 text-center'>
@@ -28,7 +28,7 @@ const FAQSection = () => {
           <Accordion
             title='How to buy tickets?'
             content={
-              'If you request any kind of tickets, we will ensure to deliver your requests on time with tokenized and customizable'
+              'If you request any kind of tickets, we will ensure to deliver your requests on time with tokenized and customizable.'
             }
             opened={activeQuestion === 1}
           />
@@ -46,7 +46,7 @@ const FAQSection = () => {
           <Accordion
             title='All my tickets are NTFs?'
             content={
-              'Yes, all your tickets are tokenized, super safe and secure. Use On-Chain-Tickets to safely prove ownership of your tickets. No gas or payment of any type is required'
+              'Yes, all your tickets are tokenized, super safe and secure. Use On-Chain-Tickets to safely prove ownership of your tickets. No gas or payment of any type is required.'
             }
             opened={activeQuestion === 3}
           />
@@ -54,14 +54,14 @@ const FAQSection = () => {
         <div className='mb-4' onClick={() => handleQuestion(4)}>
           <Accordion
             title='Can I sell my tickets?'
-            content={'Yeah, sure! It depends on the venue system'}
+            content={'Yeah, sure! It depends on the venue system.'}
             opened={activeQuestion === 4}
           />
         </div>
         <div className='mb-4' onClick={() => handleQuestion(5)}>
           <Accordion
             title='Can my tickets be replicated?'
-            content={'No way, they are all tokenized on blockchain'}
+            content={'No way, they are all tokenized on blockchain.'}
             opened={activeQuestion === 5}
           />
         </div>
