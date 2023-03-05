@@ -22,12 +22,12 @@ const FooterCol = (props: {
 
 const Footer = () => {
   return (
-    <footer className='relative text-white md:text-left text-center pt-[100px] md:px-[170px] z-40'>
+    <footer className='relative text-white md:text-left text-center pt-[100px] md:px-[130px] z-40'>
       <div className='md:flex md:justify-between'>
         <div className='flex md:flex-row flex-col'>
           <div className='md:order-1 order-2 mb-[52px]'>
             <FooterCol
-              title='Company'
+              title='On Chain Tickets'
               items={[
                 { title: 'Home', address: '/home' },
                 { title: 'Project' },

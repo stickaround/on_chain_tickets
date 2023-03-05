@@ -13,9 +13,9 @@ const Header = () => {
       <div className='flex min-h-[80px] md:items-center items-end text-white'>
         <div>
           <img
-            src='/assets/gold_coin.png'
+            src='/assets/logo.png'
             alt='logo'
-            width='50px'
+            width='150px'
             className='max-w-[unset]'
           />
         </div>

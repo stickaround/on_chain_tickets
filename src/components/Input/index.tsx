@@ -24,7 +24,7 @@ const Input = (props: Props) => {
             'bg-[#65474D] w-full text-sm border-[0.5px] p-2.5 mt-3 rounded-lg text-white ' +
             (props.error
               ? 'border-error focus:ring-error'
-              : 'border-white focus:ring-white ' + props.className)
+              : 'border-whit' + props.className)
           }
           value={props.value}
           onChange={props.handleChange}

@@ -1,8 +1,4 @@
-.dropdown-list li:last-child{
+.dropdown-list li:last-child {
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
-}
-
-.dropdown-list li:nth-of-type(even){
-  background-color: #332424;
 }

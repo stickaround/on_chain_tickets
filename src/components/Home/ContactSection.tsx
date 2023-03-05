@@ -27,9 +27,8 @@ const ContactSection = () => {
           </h4>
           <h3 className='medium-title text-center'>Contact us</h3>
           <p className='text-center font-bold px-5'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
-            vel vulputate vivamus turpis suspendisse vel. In quisque neque dolor
-            morbi quam hac non.
+            If you have anything to ask, feel free to reach out to me. We are
+            delighted to help yuo anytime.
           </p>
           <div className='flex mt-8 flex-col md:flex-row'>
             <div className='md:w-1/2 md:mr-4'>
