@@ -46,7 +46,7 @@ const HeroSection = () => {
         <CornerBorderDiv className='hidden md:block right-top-corner left-bottom-corner md:pl-16 md:pb-16 md:pt-8'>
           <div className='md:-mr-16'>
             <h2 className='font-bold md:text-d-lg leading-[64px] mb-2 text-center md:text-left text-[55px]'>
-              <p>Tickets</p>
+              <p>Access your tickets</p>
             </h2>
             <p className='font-inter mb-x-big text-3xl'>
               <span className='italic text-3xl mr-[4px] text-amber-400'>
