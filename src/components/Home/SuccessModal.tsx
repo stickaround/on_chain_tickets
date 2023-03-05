@@ -24,7 +24,7 @@ const SuccessModal = ({ closeModal }: SuccessModalProps) => {
       <div className='justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none'>
         <div className='relative w-auto my-6 mx-auto max-w-3xl'>
           {/*content*/}
-          <div className='border-0 rounded-lg shadow-lg relative flex flex-col bg-[#65474D]/90 w-full outline-none focus:outline-none'>
+          <div className='border-0 rounded-lg shadow-lg relative flex flex-col bg-[#65474D] w-full outline-none focus:outline-none'>
             {/*body*/}
             <div className='relative p-6 flex-auto'>
               <h2 className='my-4 text-slate-500 leading-relaxed text-center text-[50px]'>
