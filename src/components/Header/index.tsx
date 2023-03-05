@@ -11,13 +11,14 @@ const Header = () => {
   return (
     <header className='md:px-[90px] z-40'>
       <div className='flex min-h-[80px] md:items-center items-end text-white'>
-        <div>
+        <div className='flex items-center'>
           <img
-            src='/assets/ticket.png'
+            src='/assets/gold_coin.png'
             alt='logo'
-            width='130px'
+            width='50px'
             className='max-w-[unset]'
           />
+          <h2 className='ml-2 text-[30px]'>OCT</h2>
         </div>
         <div className='ml-auto md:flex hidden'>
           <span
