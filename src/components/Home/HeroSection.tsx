@@ -5,7 +5,7 @@ import CornerBorderDiv from '../CornerBorderDiv';
 import FadeInSection from '../FadeInSection';
 import Lode from '../Lode';
 import ConfirmCodeModal from './ConfirmCodeModal';
-// import DemoModal from './JoinAsAVenueModal';
+import SuccessModal from './SuccessModal';
 import JoinAsAFanModal from './JoinAsAFanModal';
 import JoinAsAVenueModal from './JoinAsAVenueModal';
 
@@ -16,7 +16,7 @@ const HeroSection = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
-  // const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
+  const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
   const [isJoinAsAVenueModalOpen, setIsJoinAsAVenueModalOpen] = useState(false);
   const [isJoinAsAFanModalOpen, setIsJoinAsAFanModalOpen] = useState(false);
   const [isConfirmModalOpen, setIsConfirmModalOpen] = useState(false);
@@ -141,7 +141,11 @@ const HeroSection = () => {
       <JoinAsAVenueModal
         open={isJoinAsAVenueModalOpen}
         closeModal={() => setIsJoinAsAVenueModalOpen(false)}
+        openSuccessModal={() => setIsSuccessModalOpen(true)}
       />
+      {isSuccessModalOpen && (
+        <SuccessModal closeModal={() => setIsSuccessModalOpen(false)} />
+      )}
       <JoinAsAFanModal
         open={isJoinAsAFanModalOpen}
         closeModal={() => setIsJoinAsAFanModalOpen(false)}
@@ -150,6 +154,7 @@ const HeroSection = () => {
       <ConfirmCodeModal
         open={isConfirmModalOpen}
         closeModal={() => setIsConfirmModalOpen(false)}
+        openSuccessModal={() => setIsSuccessModalOpen(true)}
       />
     </section>
   );
